@@ -1,20 +1,27 @@
 <mat-toolbar color="primary">
-    <a mat-button routerLink="/about-us">{{ "menu.home" | translate }}</a>
-    <a mat-button routerLink="/prices">{{ "menu.career" | translate }}</a>
-    <a mat-button routerLink="/contact">{{ "menu.about" | translate }}</a>
+  <mat-toolbar-row>
 
+    <a mat-button routerLink="/about-us" class="main-navbar-button">
+      <mat-icon>face</mat-icon>{{ "menu.home" | translate }}
+    </a>
+    
+    <div class="primary-navbar-button-wrapper">
+      <a mat-button routerLink="/prices" class="primary-navbar-button" >{{ "menu.career" | translate }}</a>
+      <a mat-button routerLink="/contact" class="primary-navbar-button" >{{ "menu.about" | translate }}</a>
+      <a mat-button routerLink="/contact" class="primary-navbar-button" >{{ "menu.about" | translate }}</a>
+    </div>
     <span class="spacer"></span>
 
     <button mat-button>
-        <span class="button-wrapper">
+        <span class="secondary-navbar-button-wrapper">
             <img src="../../../assets/img/github-circle-white-transparent.svg">
-            GitHub
+            <span class="secondary-navbar-button-text">GitHub</span>
         </span>
     </button>
     <button mat-button [matMenuTriggerFor]="languageMenu">
-        <span class="button-wrapper"> 
+        <span class="secondary-navbar-button-wrapper"> 
             <mat-icon>translate</mat-icon>
-            {{siteLanguage}}
+            <span class="secondary-navbar-button-text">{{siteLanguage}}</span>
             <mat-icon>arrow_drop_down</mat-icon>
         </span>
     </button>
@@ -32,5 +39,13 @@
           Impressum
         </button>
       </mat-menu>
+    </mat-toolbar-row>
+
+  <mat-toolbar-row class="mat-toolbar-second-row">
+      <a mat-button routerLink="/prices" class="primary-navbar-button" >{{ "menu.career" | translate }}</a>
+      <a mat-button routerLink="/contact" class="primary-navbar-button" >{{ "menu.about" | translate }}</a>
+      <a mat-button routerLink="/contact" class="primary-navbar-button" >{{ "menu.about" | translate }}</a>
+  </mat-toolbar-row>
+
 </mat-toolbar>
 

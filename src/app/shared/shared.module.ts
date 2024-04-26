@@ -7,7 +7,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { NgxTranslateModule } from '../translate/translate.module';
-
+import {MatTabsModule} from '@angular/material/tabs';
 
 
 @NgModule({
@@ -21,7 +21,8 @@ import { NgxTranslateModule } from '../translate/translate.module';
     MatIconModule,
     MatButtonModule,
     MatSidenavModule,
-    NgxTranslateModule
+    NgxTranslateModule,
+    MatTabsModule
   ],
   exports: [
     NavbarComponent
