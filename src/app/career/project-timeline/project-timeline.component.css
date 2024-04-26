@@ -1,0 +1,34 @@
+.mat-step-header-line {
+    display: flex;
+    align-items: center; 
+    margin: 2px;
+  }
+
+
+.mat-step-header-line span {
+    font-size: x-small;
+     color: darkgrey;
+     margin-right: 8px;
+  }
+
+.mat-vertical-content {
+    padding-right: 0px !important;
+  }
+
+  @media screen and (max-width: 480px) {
+    .mat-vertical-stepper {
+        margin-left: -24px;
+    }
+    :host /deep/ .mat-vertical-content {
+        padding-right: 0px;
+        padding-bottom: 8px;
+    }
+  }
+  
+@media screen and (min-width: 480px) {
+    :host /deep/ .mat-vertical-content {
+        padding-left: 52px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+}

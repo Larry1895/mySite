@@ -1,0 +1,35 @@
+<mat-vertical-stepper #stepper class="mat-vertical-stepper">
+
+    <ng-template matStepperIcon="edit">
+        <mat-icon>visibility</mat-icon>
+    </ng-template>
+
+    <ng-template matStepperIcon="done">
+        <mat-icon>done</mat-icon>
+    </ng-template>
+
+    <mat-step state="retail">
+        <ng-template matStepLabel>
+            <p class="mat-step-header-line"><span>September 2022 - März
+                    2024</span><span>|</span><span>Einzelhandel</span></p>
+            <p class="mat-step-header-line">Lead Developer, IT Architect</p>
+        </ng-template>
+        <app-project></app-project>
+    </mat-step>
+    <mat-step state="retail">
+        <ng-template matStepLabel>
+            <p class="mat-step-header-line"><span>September 2022 - März
+                    2024</span><span>|</span><span>Einzelhandel</span></p>
+            <p class="mat-step-header-line">Lead Developer, IT Architect</p>
+        </ng-template>
+        <app-project></app-project>
+    </mat-step>
+
+    <!-- Icon overrides. -->
+    <ng-template matStepperIcon="it">
+        <mat-icon>forum</mat-icon>
+    </ng-template>
+    <ng-template matStepperIcon="retail">
+        <mat-icon>store_front</mat-icon>
+    </ng-template>
+</mat-vertical-stepper>

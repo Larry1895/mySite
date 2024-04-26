@@ -1,0 +1,31 @@
+<mat-vertical-stepper #corpstepper class="mat-vertical-stepper">
+
+    <ng-template matStepperIcon="edit">
+        <mat-icon>visibility</mat-icon>
+    </ng-template>
+
+    <ng-template matStepperIcon="done">
+        <mat-icon>done</mat-icon>
+    </ng-template>
+
+    <mat-step state="corporation">
+        <ng-template matStepLabel>
+            <p class="mat-step-header-line">Unisys (Schweiz) GmbH</p>
+            <p class="mat-step-header-line"><span>März 2024 - Today</span><span>|</span><span>Sr. Application Develop Engineer</span></p>
+            
+        </ng-template>
+        <app-project-timeline></app-project-timeline>
+    </mat-step>
+
+    <mat-step state="corporation">
+        <ng-template matStepLabel>
+            <p class="mat-step-header-line">MT by Hyand</p>
+            <p class="mat-step-header-line"><span>März 2022 - Today</span><span>|</span><span>Sr. Software Consultant</span></p>
+        </ng-template>
+        <app-project-timeline></app-project-timeline>
+    </mat-step>
+
+    <ng-template matStepperIcon="corporation">
+        <mat-icon>corporate_fare</mat-icon>
+    </ng-template>
+</mat-vertical-stepper>

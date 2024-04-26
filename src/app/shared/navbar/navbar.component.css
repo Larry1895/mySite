@@ -1,0 +1,19 @@
+.spacer {
+    flex: 1 1 auto;
+  }
+
+  .button-wrapper {
+    display: flex; 
+    align-items: normal;
+    font-weight: bold;
+  }
+
+  .button-wrapper img {
+    margin-right: 5px;
+  }
+
+  .button-wrapper mat-icon {
+    margin-right: 5px;
+    margin-left: 5px;
+    align-self: center;
+  }

@@ -1,0 +1,30 @@
+<div id="wrapper">
+    <div id="c1"></div>
+    <div id="c2">
+        <mat-card>
+            <mat-card-content style="padding: 0px;">
+                <mat-tab-group>
+                    <mat-tab>
+                        <ng-template mat-tab-label>
+                            <mat-icon class="tab-icon">work</mat-icon>
+                            Beruflich
+                          </ng-template>
+                        <div class="mat-tab-body-wrapper">
+                            <app-corporation-timeline></app-corporation-timeline>
+                        </div>
+                    </mat-tab>
+                    <mat-tab >
+                        <ng-template mat-tab-label>
+                            <mat-icon class="tab-icon">school</mat-icon>
+                            Akademisch
+                          </ng-template>
+                        <div class="mat-tab-body-wrapper">
+                            <app-corporation-timeline></app-corporation-timeline>
+                        </div>
+                    </mat-tab>
+                </mat-tab-group>
+            </mat-card-content>
+        </mat-card>
+    </div>
+    <div id="c3"></div>
+</div>

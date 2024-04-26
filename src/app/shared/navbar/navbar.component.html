@@ -1,0 +1,36 @@
+<mat-toolbar color="primary">
+    <a mat-button routerLink="/about-us">{{ "menu.home" | translate }}</a>
+    <a mat-button routerLink="/prices">{{ "menu.career" | translate }}</a>
+    <a mat-button routerLink="/contact">{{ "menu.about" | translate }}</a>
+
+    <span class="spacer"></span>
+
+    <button mat-button>
+        <span class="button-wrapper">
+            <img src="../../../assets/img/github-circle-white-transparent.svg">
+            GitHub
+        </span>
+    </button>
+    <button mat-button [matMenuTriggerFor]="languageMenu">
+        <span class="button-wrapper"> 
+            <mat-icon>translate</mat-icon>
+            {{siteLanguage}}
+            <mat-icon>arrow_drop_down</mat-icon>
+        </span>
+    </button>
+    <mat-menu #languageMenu="matMenu">
+        <button mat-menu-item *ngFor="let language of languageList"  (click)="changeSiteLanguage(language.code)">
+          <span>{{ language.label }}</span>
+        </button>
+      </mat-menu>
+
+    <button mat-icon-button [matMenuTriggerFor]="moreVertMenu">
+        <mat-icon>more_vert</mat-icon>
+    </button>
+    <mat-menu #moreVertMenu="matMenu">
+        <button mat-menu-item>
+          Impressum
+        </button>
+      </mat-menu>
+</mat-toolbar>
+

@@ -1,0 +1,13 @@
+.mat-list-subheader mat-icon {
+    margin-right: 8px;
+    transform: scale(0.8);
+}
+
+.mat-list-item  {
+    height: auto !important;
+}
+
+
+.mat-list-item mat-chip-listbox {
+    margin-top: 16px !important;
+}
