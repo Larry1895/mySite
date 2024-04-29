@@ -1,0 +1,67 @@
+<div id="wrapper">
+    <div id="c1"></div>
+    <div id="c2">
+        <mat-card class="profile-card">
+            <mat-card-header>
+                <mat-card-title>
+                    <div mat-card-avatar class="header-image"></div>Laris Jacobs
+                </mat-card-title>
+                <mat-card-subtitle>
+                    Sr. Software Consultant, Developer and Architect
+                </mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content>
+
+                <div class="profile-desc-wrapper">
+                    <p>
+                        I am a passionate software consultant with excellent knowledge in the field of structured API
+                        programming from the <b>Java</b> and <b>Angular</b> environment. </p>
+                    <p>In the past, i was able to gain a lot of experience in microservice architectures and
+                        asynchronous
+                        communication from an architectural and developer perspective.
+                        My range of activities mainly includes the handling of the framework Spring Boot, SQL databases,
+                        asynchronous messaging and Docker in connection with Kubernetes in the cloud environment.</p>
+                    <p>By using Jenkins, Openshift and Microsoft DevOps, i has already been able to build up know-how in
+                        the area of continuous integration and continuous delivery.
+                        For optimal development, i am attaching great importance to clean code, comprehensive test
+                        coverage
+                        and extensive application monitoring before and at runtime in the area of quality control.</p>
+                    <p>In the frontend, i am proficient in the framework Angular as well as the handling of micro
+                        frontends
+                        and
+                        Monrepos, realised via Nx.
+                        I am demonstrating an agile mindset in daily development and is competent in the use of agile
+                        procedures such as Scrum, Kanban and SAFe.
+                    </p>
+                    <p>
+                       Du möchtest mehr über mich erfahren? <br>Dann klicke dich einfach durch die Webseite und erhalte 
+                       weitere Infos über meinen Werdegang und Skills.   
+                    </p>
+                </div>
+                
+                <mat-divider></mat-divider>
+
+                <div class="link-wrapper">
+
+                    <button mat-mini-fab color="none" target="_blank" href="https://github.com/Larry1895/mySite" rel="noreferrer">
+                        <img src="../../../assets/img/linkedin-icon-logo.png" style="height: 40px; width: 40px;">
+                    </button>
+
+                    <button mat-mini-fab color="none" target="_blank" href="https://github.com/Larry1895/mySite" rel="noreferrer">
+                        <img src="../../../assets/img/xing-icon-logo.png" style="height: 40px; width: 40px;">
+                    </button>
+
+                    <button mat-mini-fab color="qr" (click)="openDialog('100ms', '100ms')">
+                        <mat-icon>qr_code</mat-icon>
+                    </button>
+
+                    <button mat-mini-fab color="link" [cdkCopyToClipboard]="'http://localhost:4200/about-me'">
+                        <mat-icon>link</mat-icon>
+                    </button>
+                </div>
+               
+            </mat-card-content>
+        </mat-card>
+    </div>
+    <div id="c3"></div>
+</div>

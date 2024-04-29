@@ -1,12 +1,22 @@
 .main-navbar-button {
   font-weight: bold;
   margin-right: 16px;
-
-  mat-icon {
-    transform: scale(1.75);
-    margin-right: 16px;
-  }
 }
+
+.main-navbar-button-inside-wrapper {
+  display: flex;
+}
+
+.header-image {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+  margin-right: 8px;
+}
+
+
 
 .primary-navbar-button {
   font-weight: bold;
@@ -14,18 +24,18 @@
 }
 
 .spacer {
-    flex: 1 1 auto;
-  }
+  flex: 1 1 auto;
+}
 
-  .secondary-navbar-button-wrapper {
-    display: flex; 
-    align-items: normal;
-    font-weight: bold;
-  }
+.secondary-navbar-button-wrapper {
+  display: flex;
+  align-items: normal;
+  font-weight: bold;
+}
 
-  .secondary-navbar-button-wrapper mat-icon {
-    align-self: center;
-  }
+.secondary-navbar-button-wrapper mat-icon {
+  align-self: center;
+}
 
 
 @media screen and (max-width: 700px) {
@@ -42,12 +52,12 @@
     display: none;
   }
 }
-  
+
 @media screen and (min-width: 700px) {
-    
+
   .mat-toolbar-second-row {
     display: none;
-  } 
+  }
 
   .secondary-navbar-button-wrapper img {
     margin-right: 5px;

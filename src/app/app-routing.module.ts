@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CareerViewComponent } from './career/career-view/career-view.component';
+import { AboutViewComponent } from './about/about-view/about-view.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: '', redirectTo: '/about-me', pathMatch: 'full' },
+  { path: 'about-me', component: AboutViewComponent },
   { path: 'career', component: CareerViewComponent },
-  { path: 'about', component: CareerViewComponent },
-  { path: 'home', component: CareerViewComponent }];
+  { path: 'other', component: CareerViewComponent }];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

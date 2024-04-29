@@ -8,6 +8,7 @@ import { FormsModule } from '@angular/forms';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { NgxTranslateModule } from './translate/translate.module';
 import { CareerModule } from './career/career.module';
+import { AboutModule } from './about/about.module';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { CareerModule } from './career/career.module';
     AppRoutingModule,
     SharedModule,
     CareerModule,
+    AboutModule,
     NgxTranslateModule,
   ],
   providers: [],

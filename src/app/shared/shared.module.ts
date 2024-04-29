@@ -8,6 +8,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { NgxTranslateModule } from '../translate/translate.module';
 import {MatTabsModule} from '@angular/material/tabs';
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
@@ -15,6 +16,7 @@ import {MatTabsModule} from '@angular/material/tabs';
     NavbarComponent
   ],
   imports: [
+    RouterModule,
     CommonModule,
     MatMenuModule,
     MatToolbarModule,

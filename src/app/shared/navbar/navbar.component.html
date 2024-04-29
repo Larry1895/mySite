@@ -1,51 +1,52 @@
 <mat-toolbar color="primary">
   <mat-toolbar-row>
 
-    <a mat-button routerLink="/about-us" class="main-navbar-button">
-      <mat-icon>face</mat-icon>{{ "menu.home" | translate }}
+    <a mat-button routerLink="/about-me" class="main-navbar-button">
+      <div class="main-navbar-button-inside-wrapper">
+        <div mat-card-avatar class="header-image"></div> <span>{{ "menu.home" | translate }}</span>
+      </div>
     </a>
-    
+
     <div class="primary-navbar-button-wrapper">
-      <a mat-button routerLink="/prices" class="primary-navbar-button" >{{ "menu.career" | translate }}</a>
-      <a mat-button routerLink="/contact" class="primary-navbar-button" >{{ "menu.about" | translate }}</a>
-      <a mat-button routerLink="/contact" class="primary-navbar-button" >{{ "menu.about" | translate }}</a>
+      <a mat-button routerLink="/career" class="primary-navbar-button">{{ "menu.career" | translate }}</a>
+      <a mat-button routerLink="/*" class="primary-navbar-button">{{ "menu.about" | translate }}</a>
+      <a mat-button routerLink="/*" class="primary-navbar-button">{{ "menu.other" | translate }}</a>
     </div>
     <span class="spacer"></span>
 
-    <button mat-button>
-        <span class="secondary-navbar-button-wrapper">
-            <img src="../../../assets/img/github-circle-white-transparent.svg">
-            <span class="secondary-navbar-button-text">GitHub</span>
-        </span>
-    </button>
+    <a mat-button target="_blank" href="https://github.com/Larry1895/mySite" rel="noreferrer">
+      <span class="secondary-navbar-button-wrapper">
+        <img src="../../../assets/img/github-circle-white-transparent.svg">
+        <span class="secondary-navbar-button-text">GitHub</span>
+      </span>
+    </a>
     <button mat-button [matMenuTriggerFor]="languageMenu">
-        <span class="secondary-navbar-button-wrapper"> 
-            <mat-icon>translate</mat-icon>
-            <span class="secondary-navbar-button-text">{{siteLanguage}}</span>
-            <mat-icon>arrow_drop_down</mat-icon>
-        </span>
+      <span class="secondary-navbar-button-wrapper">
+        <mat-icon>translate</mat-icon>
+        <span class="secondary-navbar-button-text">{{siteLanguage}}</span>
+        <mat-icon>arrow_drop_down</mat-icon>
+      </span>
     </button>
     <mat-menu #languageMenu="matMenu">
-        <button mat-menu-item *ngFor="let language of languageList"  (click)="changeSiteLanguage(language.code)">
-          <span>{{ language.label }}</span>
-        </button>
-      </mat-menu>
+      <button mat-menu-item *ngFor="let language of languageList" (click)="changeSiteLanguage(language.code)">
+        <span>{{ language.label }}</span>
+      </button>
+    </mat-menu>
 
     <button mat-icon-button [matMenuTriggerFor]="moreVertMenu">
-        <mat-icon>more_vert</mat-icon>
+      <mat-icon>more_vert</mat-icon>
     </button>
     <mat-menu #moreVertMenu="matMenu">
-        <button mat-menu-item>
-          Impressum
-        </button>
-      </mat-menu>
-    </mat-toolbar-row>
+      <button mat-menu-item>
+        Impressum
+      </button>
+    </mat-menu>
+  </mat-toolbar-row>
 
   <mat-toolbar-row class="mat-toolbar-second-row">
-      <a mat-button routerLink="/prices" class="primary-navbar-button" >{{ "menu.career" | translate }}</a>
-      <a mat-button routerLink="/contact" class="primary-navbar-button" >{{ "menu.about" | translate }}</a>
-      <a mat-button routerLink="/contact" class="primary-navbar-button" >{{ "menu.about" | translate }}</a>
+    <a mat-button routerLink="/career" class="primary-navbar-button">{{ "menu.career" | translate }}</a>
+    <a mat-button routerLink="/*" class="primary-navbar-button">{{ "menu.about" | translate }}</a>
+    <a mat-button routerLink="/*" class="primary-navbar-button">{{ "menu.other" | translate }}</a>
   </mat-toolbar-row>
 
 </mat-toolbar>
-

@@ -2,6 +2,7 @@
     "menu": {
         "home": "About Me",
         "career": "Karriere",
-        "about": "About"
+        "about": "Curriculum Vitae",
+        "other": "Weiteres"
     }
 }
