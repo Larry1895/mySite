@@ -1,26 +1,29 @@
 .main-navbar-button {
-  font-weight: bold;
+  font-weight: lighter;
   margin-right: 16px;
 }
 
 .main-navbar-button-inside-wrapper {
   display: flex;
+  align-items: center;
+  
 }
 
 .header-image {
-  width: 30px;
-  height: 30px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
   background-size: cover;
-  margin-right: 8px;
+  margin-right: 16px;
 }
 
 
 
 .primary-navbar-button {
-  font-weight: bold;
-  margin-right: 16px;
+  font-size: large;
+  margin-right: 64px;
+  color: #FAFAFA;
 }
 
 .spacer {
@@ -30,7 +33,7 @@
 .secondary-navbar-button-wrapper {
   display: flex;
   align-items: normal;
-  font-weight: bold;
+  color: #FAFAFA;
 }
 
 .secondary-navbar-button-wrapper mat-icon {

@@ -14,6 +14,8 @@ import { CorporationTimelineComponent } from './corporation-timeline/corporation
 import { ProjectComponent } from './project/project.component';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatTabsModule} from '@angular/material/tabs';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+
 
 
 @NgModule({
@@ -33,7 +35,8 @@ import {MatTabsModule} from '@angular/material/tabs';
     MatListModule,
     MatDividerModule,
     MatExpansionModule,
-    MatTabsModule
+    MatTabsModule,
+    MatSlideToggleModule
   ],
   providers: [
     {

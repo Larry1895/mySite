@@ -1,13 +1,20 @@
-<mat-toolbar color="primary">
+<mat-toolbar color="primary" style="background-color: rgba(20,20,20); height: max-content; padding-top: 24px; display: flex;
+align-items: center; justify-content: center;">
   <mat-toolbar-row>
 
     <a mat-button routerLink="/about-me" class="main-navbar-button">
       <div class="main-navbar-button-inside-wrapper">
-        <div mat-card-avatar class="header-image"></div> <span>{{ "menu.home" | translate }}</span>
+        <div mat-card-avatar class="header-image"></div> 
+        <div style="display: flex; flex-direction: column; font-size: x-large; color: #FAFAFA;">
+          <span style="padding: 0px; margin: 0px;">LARIS</span>
+          <span style="padding-left: 18px; margin: 0px; margin-top: -12px;">JACOBS</span>
+        </div>
       </div>
     </a>
+    <span class="spacer"></span>
 
     <div class="primary-navbar-button-wrapper">
+      <a mat-button routerLink="/career" class="primary-navbar-button">{{ "menu.home" | translate }}</a>
       <a mat-button routerLink="/career" class="primary-navbar-button">{{ "menu.career" | translate }}</a>
       <a mat-button routerLink="/*" class="primary-navbar-button">{{ "menu.about" | translate }}</a>
       <a mat-button routerLink="/*" class="primary-navbar-button">{{ "menu.other" | translate }}</a>
@@ -17,13 +24,11 @@
     <a mat-button target="_blank" href="https://github.com/Larry1895/mySite" rel="noreferrer">
       <span class="secondary-navbar-button-wrapper">
         <img src="../../../assets/img/github-circle-white-transparent.svg">
-        <span class="secondary-navbar-button-text">GitHub</span>
       </span>
     </a>
     <button mat-button [matMenuTriggerFor]="languageMenu">
       <span class="secondary-navbar-button-wrapper">
         <mat-icon>translate</mat-icon>
-        <span class="secondary-navbar-button-text">{{siteLanguage}}</span>
         <mat-icon>arrow_drop_down</mat-icon>
       </span>
     </button>

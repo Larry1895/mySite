@@ -1,7 +1,15 @@
 #wrapper {
     display: flex;
     height: 100%;
-    margin-bottom: 16px;
+    padding-bottom: 16px;
+    padding-top: 64px;
+    background-color: rgba(20,20,20);
+    color: #FAFAFA;
+    font-family: Archivo, sans-serif;
+}
+
+h1 {
+    color: rgba(156, 146, 243);
 }
 
 #wrapper>div {
@@ -10,7 +18,7 @@
 
 @media screen and (min-width: 700px) {
     #wrapper>div:nth-of-type(2) {
-        width: 33%;
+        width: 80%;
     }
 }
 
@@ -42,22 +50,24 @@
         flex-direction: column;
     }
 
-    .header-image {
-        width: 200px;
-        height: 200px;
-        border-radius: 50%;
-        background-image: url('../../../assets/img/Laris\ Jacobs.png');
-        background-size: cover;
-        border-width: 1px;
-        border-style: solid;
-        border-color: darkgrey;
-    }
+    
+}
+.header-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-image: url('../../../assets/img/Laris\ Jacobs.png');
+    background-size: cover;
+    border-width: 1px;
+    border-style: solid;
+    border-color: darkgrey;
 }
 
 .profile-desc-wrapper {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    padding: 32px;
     padding-top: 8px;
+    width: 80%;
+    font-size: larger;
 }
 
 .link-wrapper {

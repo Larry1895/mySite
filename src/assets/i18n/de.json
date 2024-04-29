@@ -1,8 +1,8 @@
 {
     "menu": {
-        "home": "About Me",
-        "career": "Karriere",
-        "about": "Curriculum Vitae",
-        "other": "Weiteres"
+        "home": "ME",
+        "career": "KARRIERE",
+        "about": "CV",
+        "other": "SKILLS"
     }
 }
